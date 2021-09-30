@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --blue: #3C3B6E;
+    --white: #ffffff; 
+    --black: #000000;
+    --grey: #F6F6F6;
+    --red: #B22234;
+  }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: var(--blue);
+    font-size: 4em;  
+    font-weight: bold;
+    text-align: center;
+}
+h2 {
+    color: var(--blue);
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.5em;
+    color: var(--blue);
+   
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 2em;
+
+}
+
+
+input {
+    background-color: var(--grey);
+    color: var(--blue);
+    padding:12px;
+    border: 0;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    outline: none;
+
+}
+
+::placeholder {
+    color: var(--blue);
+    font-size: 18px;
+}
+.flag {
+    width: 60px;
+
+}
+.message-error {
+    background-color: var(--red);
+    color: var(--white);
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.card-details{
+  
+    border: 2px solid var(--blue);
+    padding: 2em 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    max-width: 500px;
+    margin: auto;
+    padding-top: 1em;
+}
+
+
+@media only screen and (max-width: 600px) {
+   .card-container {
+       padding: 1em;
+       flex-direction: column;
+   }
+  }
